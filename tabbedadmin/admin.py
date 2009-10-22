@@ -5,12 +5,12 @@ import forms
 import sets
 
 class TabbedModelAdmin(admin.ModelAdmin):
-    current_tab = None
     form = forms.TabbedForm
-    tabs_order = []
     change_form_template = 'admin/change_form_tabbed.html'
 
     def __init__(self, model, admin_site):
+        self.current_tab = None
+        self.tabs_order = []
         self.tab_inline_instances = {}
         self.old_inline_instances = []
         super(TabbedModelAdmin, self).__init__(model, admin_site)
