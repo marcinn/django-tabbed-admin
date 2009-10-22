@@ -1,0 +1,16 @@
+{% extends "admin/change_form.html" %}
+{% load i18n %}
+
+{% block content %}
+{% if tabs %}
+    <div id="changeform_tabs">
+        <ul>
+        {% for tab,title in tabs %}
+        <li{% ifequal current_tab tab %} class="selected"{% endifequal %}><a href="?tab={{ tab }}"><span>{{title}}</span></a></li>
+        {% endfor %}
+        </ul>
+    </div>
+{% endif %}
+{{ block.super }}
+{% endblock %}
+

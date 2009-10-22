@@ -1,0 +1,56 @@
+#changeform_tabs {
+    background:#fff none repeat scroll 0 0;
+    border-bottom:1px solid #ccc;
+    float:left;
+    font-size:93%;
+    line-height:normal;
+    width:100%;
+}
+
+div#content-main form 
+{
+    padding: 1em;
+    background-color: #fcfcfc;
+    border: 1px solid #ccc;
+    border-width: 0px 1px 1px 1px;
+}
+
+#changeform_tabs ul {
+    list-style-image:none;
+    list-style-position:outside;
+    list-style-type:none;
+    margin:0;
+    padding:10px 10px 0 20px;
+}
+#changeform_tabs li {
+    display:inline;
+    margin:0;
+    padding:0;
+}
+#changeform_tabs a {
+    background:transparent url(../images/tableftJ.gif) no-repeat scroll left top;
+    float:left;
+    margin:0;
+    padding:0 0 0 5px;
+    text-decoration:none;
+}
+#changeform_tabs a span {
+    background:transparent url(../images/tabrightJ.gif) no-repeat scroll right top;
+    color:#24618E;
+    display:block;
+    float:left;
+    padding:5px 15px 4px 6px;
+}
+#changeform_tabs a span {
+    float:none;
+}
+#changeform_tabs a:hover span, #changeform_tabs li.selected a span {
+    color:#FFFFFF;
+}
+#changeform_tabs a:hover, #changeform_tabs li.selected a {
+    background-position:0 -42px;
+}
+#changeform_tabs a:hover span, #changeform_tabs li.selected a span {
+    background-position:100% -42px;
+}
+
